@@ -1,0 +1,45 @@
+<view class="all">
+	<view>
+		<view class="data">
+			<view class="left">
+				<view class="data-list" wx:for="{{note_list}}" wx:key="index" wx:if="{{(index)%2===0}}" style="height: {{item.note_length}}rpx">
+					<view class="content" style="height:{{item.note_length-20}}rpx">
+						<view class="data-title">
+							{{item.elementary.title}}
+						</view>
+						<text class="data-content">
+						{{item.elementary.detail}}
+						</text>
+						<view class="data-time">
+							{{item.elementary.last_change_time}}{{index}}
+						</view>
+					</view>
+				</view>
+			</view>
+			<view class="right">
+				<view class="data-list" wx:for="{{note_list}}" wx:key="index" wx:if="{{(index)%2===1}}" style="height: {{item.note_length}}rpx">
+					<view class="content" style="height:{{item.note_length-20}}rpx">
+						<view class="data-title">
+							{{item.elementary.title}}
+						</view>
+						<text class="data-content">
+						{{item.elementary.detail}}
+						</text>
+						<view class="data-time">
+							{{item.elementary.last_change_time}}{{index}}
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+
+
+
+
+	<view class="add">
+		<button class="add-button" size="mini" style="width:100rpx; background-image:url(../../icon/add.png);">
+		</button>
+	</view>
+</view>

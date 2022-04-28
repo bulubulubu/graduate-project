@@ -1,0 +1,18 @@
+<view>
+	<view class="sort" wx:for="{{list}}" wx:key="number" wx:for-index="index">
+		<view class="sort-column" bindtap="a">
+			<image class="sort-column-direction" src="{{sort_direction}}" mode="aspectFit" />
+			<view class="sort-column-name">
+				{{item.number}}
+			</view>
+		</view>
+		<view class="sort-detail" wx:for="{{list[index].value}}" wx:key="key" wx:for-index="a_index">
+			<view hidden="{{hit}}">
+				{{list[index].value[a_index]}}
+			</view>
+			<view style="display:{{hita}}">
+				{{item}}
+			</view>
+		</view>
+	</view>
+</view>
