@@ -1,0 +1,16 @@
+.sort-column{
+    background-color: brown;
+    height: 50rpx;
+}
+.sort-column-direction{
+    height: 50rpx;
+    width: 50rpx;
+    float: left;
+}
+.sort-column-name{
+    
+    float: left;
+}
+.sort-detail{
+    background-color: aqua;
+}

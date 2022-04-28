@@ -1,0 +1,70 @@
+
+
+page{
+  background: white;
+
+  --data_list_width:355rpx;
+  --content_width:275rpx;
+}
+.left {
+  width: var(--data_list_width);
+  margin-left: 14rpx;
+  margin-right: 7rpx;
+  float: left;
+}
+.right {
+  width: var(--data_list_width);
+  margin-right: 14rpx;
+  margin-left: 7rpx;
+  float: right;
+}
+.data-list{
+  border-radius: 15px 15px 15px 15px;
+  margin-bottom: 15rpx;
+  background-color: bisque;
+
+}
+.content{
+  width: var(--content_width);
+  margin-left: 40rpx;
+  background-color: rgb(170, 238, 215);
+  float: left;
+  margin-top: 10rpx;
+  /* 设置网格容器 */
+  display: grid;
+  grid-template-rows: 40rpx auto 60rpx;
+}
+
+.data-content{
+  width: var(--content_width);
+  /* background-color: blueviolet; */
+  /* display: inline-block; */
+  position: relative;
+  top: -10rpx;
+/* 控制超过文本框的内容的显示方式 */
+  overflow: hidden;
+}
+.data-time{
+  position: relative;
+  bottom: -10rpx;
+/* background-color: chocolate; */
+}
+.add-button{
+  border-radius: 50%;
+  height: 100rpx;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100rpx 100rpx;
+  
+}
+.add{
+  height: 100rpx;
+  width: 100rpx;
+  position: fixed;
+  top: 85%;
+  right: 5%;
+}
+.add-image{
+  height: 100rpx;
+  width: 100rpx;
+}
